@@ -1,0 +1,22 @@
+{
+    "name": "positivezero/rest",
+    "type": "library",
+    "description": "The REST PHP client",
+    "keywords": ["rest", "client", "php", "library"],
+    "homepage": "https://github.com/positivezero/rest",
+    "license": ["New BSD License"],
+    "authors": [
+        {
+	    "name": "Vojtěch Kijenský",
+	    "homepage" : "http://www.positivezero.co.uk"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.3.0",
+        "ext-curl": "*"
+    },
+    "autoload": {
+        "classmap": ["src/"]
+    }
+}
