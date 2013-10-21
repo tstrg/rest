@@ -4,7 +4,7 @@
     "description": "The REST PHP client",
     "keywords": ["rest", "client", "php", "library"],
     "homepage": "https://github.com/positivezero/rest",
-    "license": ["New BSD License"],
+    "license": ["BSD 3-Clause"],
     "authors": [
         {
 	    "name": "Vojtěch Kijenský",
