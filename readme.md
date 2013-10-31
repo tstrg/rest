@@ -1,7 +1,12 @@
-REST client - DO NOT USE!
+REST client
 ===
 
-A simple HTTP and REST client for php
+A simple, but powerful HTTP and REST client for php
+
+```php
+ $client = new \Positivezero\RestClient();
+ $response = $client->put($endpoint, $data);
+```
 
 ---
-Under *New BSD License*
+Under *BSD 3-Clause License*

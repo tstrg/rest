@@ -15,3 +15,5 @@ namespace Positivezero\Rest;
 class Exception extends \Exception {}
 
 class InvalidArgumentException extends \Exception {}
+
+class RestClientException extends \Exception {}

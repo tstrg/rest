@@ -9,6 +9,11 @@
         {
 	    "name": "Vojtěch Kijenský",
 	    "homepage" : "http://www.positivezero.co.uk"
+        },
+        {
+        "name": "Travis Dent",
+        "email": "tcdent@gmail.com",
+        "homepage" : "https://github.com/tcdent/php-restclient"
         }
     ],
     "require": {
