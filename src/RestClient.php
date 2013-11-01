@@ -27,7 +27,7 @@ use Positivezero\Rest\RestClientException;
  */
 class RestClient implements \Iterator, \ArrayAccess {
 	/** @const DEBUG enable debug to screen */
-	const DEBUG = true;
+	const DEBUG = false;
 	/** @const VERBOSE if is debug enabled, you can choose verbose level 0=less|1=more */
 	const VERBOSE = 0;
 	/** @var array  */
