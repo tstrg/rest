@@ -204,7 +204,7 @@ class RestClient implements \Iterator, \ArrayAccess {
 	 */
 	protected  function execute($url, $method='GET', $parameters=array(), $headers=array()){
 		$this->debugCounter = 0;
-		if (self::DEBUG) $this->debug(0, 'executing curl');
+		if (self::DEBUG) $this->debug(0, 'executing curl: ' . $method . ' ' . $this->options['base_url'] . '/' . $url);
 		$client = clone $this;
 		$client->url = $url;
 		$client->handle = curl_init();
@@ -381,7 +381,7 @@ class RestClient implements \Iterator, \ArrayAccess {
 		$args = func_get_args();
 		if ($args[0] > self::VERBOSE ) return;
 		if (func_num_args()>2) {
-			print str_pad( '=== ' . strtoupper($args[1]) . ' =', 40, '=', STR_PAD_RIGHT) . "\n";
+			print str_pad( '=== ' . strtoupper($args[1]) . ' =', 80, '=', STR_PAD_RIGHT) . "\n";
 			if (is_array($args[2]))  {
 				print_r($args[2]);
 				print "\n";
@@ -389,7 +389,7 @@ class RestClient implements \Iterator, \ArrayAccess {
 				var_dump($args[2]);
 			}
 		} else {
-			print str_pad( '=== ' . strtoupper($args[1]) . ' =', 40,'=', STR_PAD_RIGHT) . "\n";
+			print str_pad( '=== ' . strtoupper($args[1]) . ' =', 80,'=', STR_PAD_RIGHT) . "\n";
 		}
 	}
 }
