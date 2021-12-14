@@ -28,8 +28,12 @@ use Positivezero\Rest\RestClientException;
 class RestClient implements \Iterator, \ArrayAccess {
 	/** @const DEBUG enable debug to screen */
 	const DEBUG = false;
+	//tstrg
+	//const DEBUG = true;
 	/** @const VERBOSE if is debug enabled, you can choose verbose level 0=less|1=more */
 	const VERBOSE = 0;
+	//tstrg
+	//const VERBOSE = 1;
 	/** @var array  */
 	public $options;
 	/** @var object cURL resource */
